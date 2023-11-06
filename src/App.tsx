@@ -1,4 +1,5 @@
 import React from 'react';
+import '@fontsource/inter';
 import logo from './logo.svg';
 import './App.css';
 
