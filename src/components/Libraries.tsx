@@ -1,13 +1,18 @@
-import { Box } from "@mui/joy";
+import { Grid } from "@mui/joy";
+import Library from "./Library";
 
-export default function Libraries() {
+export default function Libraries({ selectedLibraries }: any) {
     return (
-        <Box
+        <Grid
         sx={{
             flexGrow: 3
         }}
         >
-            
-        </Box>
+            {selectedLibraries.map((libary) => (
+                <Grid>
+                    <Libary library/>
+                </Grid>
+            ))}
+        </Grid>
     )
 }
